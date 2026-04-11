@@ -118,7 +118,7 @@ lerobot-teleoperate \
     --teleop.id=my_awesome_leader_arm \
     --display_data=true
 ```
-## 6、make dataset
+## 6、make a dataset
 - save dataset to local:
 ```
 lerobot-record \
