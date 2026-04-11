@@ -347,7 +347,7 @@ lerobot-record \
   --dataset.reset_time_s=10
 ```
 
-# Thanks
+# Acknowledgements
 ```
 https://wiki.seeedstudio.com/cn/lerobot_so100m_new/
 ```
