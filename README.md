@@ -179,9 +179,7 @@ lerobot-record \
 ```
 ## 7、train & eval
 ### 7.1 ACT
-- train
-
-local:
+- train(local)
 ```
 lerobot-train \
   --dataset.repo_id=lerobot_dataset/test01 \
@@ -193,18 +191,7 @@ lerobot-train \
   --policy.push_to_hub=false\
   --steps=300000 
 ```
-Hugging Face Hub:
-```
-lerobot-train \
-  --dataset.repo_id=${HF_USER}/so101_test \
-  --policy.type=act \
-  --output_dir=outputs/train/act_so101_test \
-  --job_name=act_so101_test \
-  --policy.device=cuda \
-  --wandb.enable=false \
-  --steps=300000 
-```
-- eval
+- eval(local)
 ```
 lerobot-record \
   --robot.type=so101_follower \
@@ -215,6 +202,17 @@ lerobot-record \
   --dataset.repo_id=lerobot_dataset/eval_test01 \
   --dataset.single_task="Put lego brick into the transparent box" \
   --policy.path=outputs/train/act_so101_test01/checkpoints/last/pretrained_model
+```
+- train(Hugging Face Hub)
+```
+lerobot-train \
+  --dataset.repo_id=${HF_USER}/so101_test \
+  --policy.type=act \
+  --output_dir=outputs/train/act_so101_test \
+  --job_name=act_so101_test \
+  --policy.device=cuda \
+  --wandb.enable=false \
+  --steps=300000 
 ```
 ### 7.2 SmolVLA
 - train(Hugging Face Hub)
