@@ -15,7 +15,7 @@ conda init --all
 ```
 - Create conda env and activate it
 ```
-conda create -n env_lerobot python=3.10 && conda activate lerobot
+conda create -n env_lerobot python=3.10 && conda activate env_lerobot
 ```
 - Git clone
 ```
