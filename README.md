@@ -57,7 +57,7 @@ After pressing Enter, the drive board continues to connect to the next steering 
 ```
 lerobot-setup-motors \
     --teleop.type=so101_leader \
-    --teleop.port=/dev/ttyACM0
+    --teleop.port=/dev/ttyACM1
 ```
 ## 3、Calibrate steering gear
 Expand the robotic arm to the corresponding position (the base is perpendicular to the desktop, and the remaining robotic arm is horizontal to the desktop, with an angle of 45° upward)
